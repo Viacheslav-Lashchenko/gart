@@ -1,0 +1,9 @@
+@import url('base.css');
+@import url('fonts.css');
+
+:root {
+  --gt-color-grey: #37455C;
+  --gt-color-blue: #005AFF;
+  --gt-color-white-grey: #EFF4F5;
+  --gt-color-orange: #E75855;
+}
