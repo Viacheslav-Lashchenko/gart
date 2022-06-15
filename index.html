@@ -12,14 +12,11 @@
 <body>
   <header class="gt-header">
     <div class="gt-header-container">
-      <div class="gt-tell">
-        <a href="tel:+73952972484" class="gt-tell-link">
-          <img src="assets/img/headphone.svg" alt="headphone">
-          <span class="gt-txt-primary">+7 (3952) </span><span class="gt-txt-secondary">799-343</span>
-        </a>
-      </div>
+      <a href="tel:+73952972484" class="gt-tell-link">
+        <span class="gt-txt-primary">+7 (3952) </span><span class="gt-txt-secondary">799-343</span>
+      </a>
       <div class="gt-header-btns">
-        <button class="gt-btn gt-btn-primary">
+        <button class="gt-btn-head gt-btn-primary">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M27 14C27 6.82053 21.1777 1 13.9991 1C6.81967 1 1 6.82053 1 14C1 21.1803 6.81967 27 13.9991 27C21.1777 27 27 21.1803 27 14Z"
@@ -31,7 +28,7 @@
               stroke-linejoin="round" />
           </svg>
         </button>
-        <button class="gt-btn gt-btn-secondary">
+        <button id="burger" class="burger gt-btn-head gt-btn-secondary">
           <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M20 1L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M20 10L1 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -40,6 +37,74 @@
       </div>
     </div>
   </header>
+
+  <section class="gt-mobile-menu nav-links">
+    <div class="gt-sticky-btn">
+      <button id="burger" class="burger gt-btn-head gt-btn-secondary">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L14 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M14 1L1 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="gt-mobile-menu-container">
+      <ul class="gt-mobile-menu-list">
+        <li><a href="">Опыт</a></li>
+        <li><a href="">Техника</a></li>
+        <li><a href="">Особенности</a></li>
+        <li><a href="">Гарантии</a></li>
+        <li><a href="">Результат</a></li>
+        <li><a href="">Цены</a></li>
+        <li><a href="">Карта глубин</a></li>
+        <li><a href="">Сроки</a></li>
+        <li><a href="">Порядок работы</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+      <div class="gt-contact">
+        <a href="tel:+73952972484" class="gt-tell-link">
+          <span>+7 (3952) 799-343</span>
+        </a>
+        <div class="gt-contact-social">
+          <span>Напишите нам</span>
+          <ul>
+            <li><a class="gt-mark-first" href="">Viber</a></li>
+            <li><a class="gt-mark-second" href="">Whatsapp</a></li>
+            <li><a class="gt-mark-third" href="">Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="gt-mobile-menue-footer">
+      <button class="gt-menu-btn-primary">
+        <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.7699 15.965C17.7438 16.4793 20.6999 18.1673 20.6999 19.925C20.6999 22.1109 16.2677 23.885 10.7999 23.885C5.33065 23.885 0.899902 22.1109 0.899902 19.925C0.899902 18.1673 3.85456 16.4793 7.8299 15.965"
+            stroke="#37455C" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M10.7986 1.11499C8.61318 1.11499 6.84009 2.88709 6.84009 5.07499C6.84009 7.2619 8.61318 9.03499 10.8001 9.03499C12.987 9.03499 14.7601 7.2619 14.7601 5.07499C14.7601 2.88709 12.987 1.11499 10.7986 1.11499Z"
+            stroke="#37455C" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10.8 19.925V9.03499" stroke="#37455C" stroke-width="1.8" stroke-miterlimit="10"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Узнать глубину <br> на участке</span>
+      </button>
+      <button class="gt-menu-btn-secondary">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M27 14C27 6.82053 21.1777 1 13.9991 1C6.81967 1 1 6.82053 1 14C1 21.1803 6.81967 27 13.9991 27C21.1777 27 27 21.1803 27 14Z"
+            stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M10.75 20.9333V8.22192H15.3C17.055 8.22192 18.4781 9.64499 18.4781 11.4C18.4781 13.155 17.055 14.5781 15.3 14.5781H7.93335"
+            stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7.93335 18.3333H14" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span>Рассчитать <br> стоимость бурения</span>
+      </button>
+    </div>
+  </section>
+
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
