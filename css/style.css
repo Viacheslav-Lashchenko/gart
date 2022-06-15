@@ -7,3 +7,80 @@
   --gt-color-white-grey: #EFF4F5;
   --gt-color-orange: #E75855;
 }
+
+header {
+  height: 72px;
+}
+
+.gt-header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.gt-tell {
+  display: flex;
+  align-items: center;
+  width: 249px;
+
+}
+
+.gt-tell a {
+  display: flex;
+  gap: 0 10px;
+  font-family: 'Gotham Pro';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 19px;
+}
+
+.gt-tell span {
+  color: var(--gt-txt-color);
+}
+
+.gt-txt-primary {
+  --gt-txt-color: var(--gt-color-grey);
+}
+
+.gt-txt-secondary {
+  --gt-txt-color: var(--gt-color-blue);
+}
+
+
+.gt-header-btns {
+  display: flex;
+  margin-right: -16px;
+}
+
+.gt-btn {
+  position: relative;
+  min-width: 72px;
+  height: 72px;
+  background: var(--gt-btn-bg-color);
+  border: none;
+  cursor: pointer;
+  padding: 24px 24px 24px 0;
+  color: #EFF4F5;
+}
+
+.gt-btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: -28px;
+  top: 0;
+  width: 28px;
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url('//assets/img/button-left.svg');
+  mask-image: url('../assets/img/button-left.svg');
+  background: var(--gt-btn-bg-color);
+}
+
+.gt-btn-primary {
+  --gt-btn-bg-color: var(--gt-color-grey);
+}
+
+.gt-btn-secondary {
+  --gt-btn-bg-color: var(--gt-color-blue);
+}
