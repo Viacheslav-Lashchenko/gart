@@ -8,11 +8,13 @@ body {
   margin: 0;
   padding: 0;
   color: var(--gt-color-white);
+  overflow: hidden;
 }
 
 h1,
 h2,
 h3 {
+  margin: 0;
   font-weight: 700;
 }
 
@@ -28,5 +30,10 @@ a {
 ul {
   margin: 0;
   list-style: none;
+  padding: 0;
+}
+
+p {
+  margin: 0;
   padding: 0;
 }

@@ -245,3 +245,64 @@ header {
 .gt-mobile-menue-footer span {
   text-align: left;
 }
+
+/* Gart-7---Main section */
+
+.gt-main {}
+
+.gt-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 40px 16px 0 16px;
+}
+
+.gt-main .gt-main-title {
+  font-size: 35px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: var(--gt-color-blue);
+}
+
+.gt-main .gt-main-title span {
+  display: block;
+  margin-top: 8px;
+  color: var(--gt-color-grey);
+}
+
+.gt-main-items {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+  color: var(--gt-color-grey);
+  gap: 18px;
+}
+
+.gt-main-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding-left: 60px;
+}
+
+.gt-main-item::before {
+  content: url("data: image/svg+xml, %3Csvg width='13' height='9' viewBox='0 0 13 9' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M1.86523 4.49994L6.21964 7.99994L11.7616 0.999939' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
+  display: flex;
+  position: absolute;
+  width: 39px;
+  height: 52px;
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url('../assets/img/Rectangle.svg');
+  mask-image: url('../assets/img/Rectangle.svg');
+  background-color: var(--gt-color-blue);
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+.gt-main-item-description {}
