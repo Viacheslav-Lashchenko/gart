@@ -8,12 +8,12 @@ body {
   margin: 0;
   padding: 0;
   color: var(--gt-color-white);
-  overflow: hidden;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   font-weight: 700;
 }
@@ -35,5 +35,13 @@ ul {
 
 p {
   margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  border: none;
+  background: none;
+  outline: none;
   padding: 0;
 }
