@@ -12,7 +12,7 @@
   --gt-color-white-blue: #2CA0DA;
 }
 
-/* GT-Header */
+/* #region GT-5-Header*/
 
 
 header {
@@ -106,7 +106,8 @@ header {
   --gt-btn-bg-color: var(--gt-color-blue);
 }
 
-/* GT-mobile menu */
+/* #endregion */
+/* #region GT-6-mobile-menu*/
 
 .gt-mobile-menu {
   position: absolute;
@@ -117,7 +118,6 @@ header {
   display: flex;
   flex-direction: column;
   background: var(--gt-color-grey);
-  /* display: none; */
 }
 
 .nav-links {
@@ -246,7 +246,8 @@ header {
   text-align: left;
 }
 
-/* Gart-7---Main section */
+/* #endregion */
+/* #region GT-7-Main-section */
 
 .gt-main {}
 
@@ -305,14 +306,15 @@ header {
   left: 0;
 }
 
+/* #endregion */
+/*#region GT-8-Main-form */
 
-/*#region Gart-8-Main form */
 .gt-main-form {
   overflow: visible;
 }
 
 .gt-main-form-container {
-  padding: 30px 16px;
+  padding: 30px 16px 0;
   background: var(--gt-color-white-grey);
   overflow: visible;
 }
@@ -383,6 +385,74 @@ header {
   font-size: 14px;
   line-height: 120%;
   text-align: center;
+}
+
+/* #endregion */
+
+
+/* #region experience section */
+.gt-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 44px 16px 20px;
+  background: var(--gt-color-blue);
+}
+
+.gt-experience-title {
+  color: var(--gt-color-white);
+}
+
+.gt-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.gt-title span {
+  display: block;
+  font-size: 40px;
+  line-height: 38px;
+}
+
+.gt-experience-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gt-experience-label {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.gt-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gt-experience-item {
+  position: relative;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.gt-experience-item::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 0;
+  width: 15px;
+  height: 2px;
+  background: var(--gt-color-white);
 }
 
 /* #endregion */
