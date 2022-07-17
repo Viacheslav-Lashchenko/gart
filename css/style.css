@@ -249,8 +249,6 @@ header {
 /* #endregion */
 /* #region GT-7-Main-section */
 
-.gt-main {}
-
 .gt-main-container {
   display: flex;
   flex-direction: column;
@@ -503,15 +501,11 @@ header {
   gap: 20px;
 }
 
-.gt-features-title {}
-
 .gt-description {
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
 }
-
-.gt-features-text {}
 
 .gt-text {
   font-weight: 400;
@@ -577,8 +571,6 @@ header {
   align-items: center;
   gap: 12px;
 }
-
-.gt-our-works-wrap-img {}
 
 .gt-our-works-img {
   display: block;
