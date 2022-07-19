@@ -571,6 +571,9 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 120%;
 }
 
 .gt-our-works-img {
