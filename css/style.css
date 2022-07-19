@@ -334,6 +334,7 @@ header {
 }
 
 .gt-main-form-h4 {
+  color: var(--gt-color-white);
   font-size: 22px;
   line-height: 100%;
 }
@@ -518,7 +519,7 @@ header {
 /* #region GT-11-our-works section */
 
 .gt-our-works {
-  padding: 30px 16px 0;
+  padding: 30px 16px;
   background: var(--gt-color-white-grey);
 }
 
@@ -570,6 +571,9 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 120%;
 }
 
 .gt-our-works-img {
@@ -579,6 +583,49 @@ header {
 
 .gt-our-works-img-primary {
   filter: grayscale(1);
+}
+
+/* #endregion */
+
+/* #region GT-12-block-with-kamaz section */
+.gt-kamaz {
+  padding: 30px 0;
+  background: var(--gt-color-grey);
+  color: var(--gt-color-white);
+  overflow: hidden;
+}
+
+.gt-kamaz-container {
+  padding: 0 15px;
+}
+
+.gt-kamaz-title {
+  margin-bottom: 46px;
+}
+
+.gt-kamaz-descriotion {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+
+.mechanism {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+.gt-kamaz-kamaz {
+  transition: margin-left 2s, opacity 2s;
+  opacity: 0;
+  width: 694px;
+  margin-top: -50px;
+  margin-left: 500px;
+}
+
+#gt-kamaz-kamaz2 {
+  margin-top: -240px;
 }
 
 /* #endregion */
