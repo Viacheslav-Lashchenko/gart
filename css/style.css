@@ -629,3 +629,96 @@ header {
 }
 
 /* #endregion */
+
+/* #region GT-13-goodness section */
+
+.gt-goodness {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  color: var(--gt-color-grey)
+}
+
+.gt-goodness-worker {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 68px;
+  width: 100%;
+  height: 454px;
+  background: url('/assets/img/worker.svg') center center/286px 100% no-repeat;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.gt-goodnes-worker-title {
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--gt-color-white);
+}
+
+.googdess-plannig-container {
+  flex-direction: column;
+  display: flex;
+  gap: 35px;
+  padding: 0 16px 0 16px;
+}
+
+.googdess-plannig-title {
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.googdess-plannig-description {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.googdess-plannig-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.googdess-plannig-item {
+  align-items: center;
+  gap: 32px;
+  display: flex;
+}
+
+.googdess-plannig-logo {
+  padding: 10px;
+  display: flex;
+  width: 136px;
+  height: 82px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  -webkit-mask-size: 100%;
+  -webkit-mask-image: url("../assets/img/long-Rectangle.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-size: auto 100%;
+  mask-image: url("../assets/img/long-Rectangle.svg");
+  mask-repeat: no-repeat;
+  background: var(--gt-color-blue);
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 1.2;
+  color: var(--gt-color-white);
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+.googdess-plannig-logo span {
+  align-self: flex-start;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.googdess-plannig-title {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* #endregion */
