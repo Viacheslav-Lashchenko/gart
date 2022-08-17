@@ -636,7 +636,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  color: var(--gt-color-grey)
+  color: var(--gt-color-grey);
+  background: var(--gt-color-white-grey);
 }
 
 .gt-goodness-worker {
@@ -718,6 +719,78 @@ header {
 
 .googdess-plannig-title {
   font-size: 20px;
+  line-height: 1.2;
+}
+
+/* #endregion */
+
+/* #region GT-14-order-of-work section */
+
+.gt-order {
+  color: var(--gt-color-grey);
+  background: var(--gt-color-white-grey);
+}
+
+.gt-order-container {
+  padding: 12px;
+}
+
+.gt-order-card-list {
+  counter-reset: section;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+.gt-order-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 160px;
+  background: var(--gt-color-white);
+  padding: 32px 20px 32px 70px;
+  justify-content: center;
+  position: relative;
+}
+
+.gt-order-card::before {
+  position: absolute;
+  top: calc(50% - 58.5px);
+  left: 0;
+  width: 50px;
+  height: 117px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  counter-increment: section;
+  content: "0" counter(section);
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url('../assets/img/stick.svg');
+  mask-image: url('../assets/img/stick.svg');
+  background: var(--gt-color-white-grey);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+}
+
+.gt-order-card-text {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.gt-txt-blue {
+  color: var(--gt-color-blue);
+}
+
+.gt-order-card-description {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 1.2;
 }
 
