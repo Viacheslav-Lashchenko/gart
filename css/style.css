@@ -795,3 +795,102 @@ header {
 }
 
 /* #endregion */
+/* #region GT-15-documents-section */
+.gt-documets {
+
+  background: var(--gt-color-blue);
+}
+
+.gt-documents-container {
+  padding: 30px 0;
+  width: 384px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 58px;
+}
+
+.gt-documents-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 384px;
+  height: 388px;
+  background: var(--gt-color-white);
+  position: relative;
+  color: var(--gt-color-grey);
+  padding: 0 0 44px 46px;
+  box-sizing: border-box;
+  gap: 18px;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 2;
+}
+
+.gt-documents-card::after {
+  position: absolute;
+  bottom: -12px;
+  left: calc(50% - 179px);
+  content: "";
+  width: 358px;
+  height: 40px;
+  background: var(--gt-color-white);
+  opacity: 0.3;
+  border-radius: 8px;
+}
+
+.gt-documents-img {
+  position: absolute;
+}
+
+#dogovor {
+  top: -48px;
+  left: 44px;
+}
+
+#ruchka {
+  top: 100px;
+  left: 202px;
+}
+
+#molecula {
+  top: -69px;
+  left: -16px;
+}
+
+#microscop {
+  top: -92px;
+  left: 130px;
+}
+
+#pasport {
+  top: -38px;
+  left: 50px;
+}
+
+.gt-documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gt-documents-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.gt-documents-text span,
+.gt-documents-description span {
+  display: block;
+}
+
+.gt-documents-under-list {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1, 0;
+}
+
+/* #endregion */
