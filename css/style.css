@@ -107,17 +107,14 @@ header {
 }
 
 /* #endregion */
+
 /* #region GT-6-mobile-menu*/
 
 .gt-mobile-menu {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  position: fixed;
+  inset: 0;
   background: var(--gt-color-grey);
+  z-index: 1;
 }
 
 .nav-links {
@@ -127,6 +124,10 @@ header {
 
 .active {
   transform: translateX(0%);
+}
+
+.closed {
+  overflow: hidden;
 }
 
 .gt-sticky-btn {
@@ -802,39 +803,35 @@ header {
 }
 
 .gt-documents-container {
-  padding: 30px 0;
-  width: 384px;
+  max-width: 1210px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 58px;
+  padding: 24px;
+}
+
+.gt-documents-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+  margin-top: 48px;
 }
 
 .gt-documents-card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  width: 384px;
-  height: 388px;
-  background: var(--gt-color-white);
   position: relative;
-  color: var(--gt-color-grey);
-  padding: 0 0 44px 46px;
-  box-sizing: border-box;
-  gap: 18px;
-  justify-content: flex-end;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1, 2;
+  z-index: 1;
+  padding: 0 40px 40px;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .gt-documents-card::after {
   position: absolute;
   bottom: -12px;
-  left: calc(50% - 179px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: calc(100% - 24px);
   content: "";
-  width: 358px;
   height: 40px;
   background: var(--gt-color-white);
   opacity: 0.3;
@@ -842,38 +839,16 @@ header {
 }
 
 .gt-documents-img {
-  position: absolute;
-}
-
-#dogovor {
-  top: -48px;
-  left: 44px;
-}
-
-#ruchka {
-  top: 100px;
-  left: 202px;
-}
-
-#molecula {
-  top: -69px;
-  left: -16px;
-}
-
-#microscop {
-  top: -92px;
-  left: 130px;
-}
-
-#pasport {
-  top: -38px;
-  left: 50px;
+  display: block;
+  max-width: 100%;
+  margin-top: -48px;
 }
 
 .gt-documents-list {
+  justify-content: flex-end;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 .gt-documents-item {
