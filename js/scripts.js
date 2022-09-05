@@ -1,10 +1,12 @@
 "use strict";
 const burger = document.querySelectorAll('.burger');
 const navLinks = document.querySelector('.nav-links');
+const body = document.querySelector('body');
 
 burger.forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    body.classList.toggle('closed');
   })
 })
 
